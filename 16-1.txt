@@ -1,0 +1,22 @@
+/*WAP to create a class examination having a method 
+display taking three argument */
+class Examination 
+{
+	static void display (String name, int reg, float cgpa)
+	{
+		System.out.println("Name of the Student is : "+
+		name+ "Reg num of Student : "+reg+ "CGPA of the student is : "+cgpa+););
+	}
+	public static void main (String st[])
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the name ");
+		String name = s.next();
+		System.out.println("Enter the Reg num");
+		int reg = s.nextInt();
+ 		System.out.println("Enter the cgpa");
+		float cgpa = s.nextFloat();
+		display(name,reg,cgpa);
+		
+	}
+}
